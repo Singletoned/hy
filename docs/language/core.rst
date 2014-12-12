@@ -163,6 +163,29 @@ Return True if ``coll`` is empty, i.e. ``(= 0 (len coll))``.
    False
 
 
+.. _even?-fn:
+
+even?
+-----
+
+Usage: ``(even? x)``
+
+Return True if x is even.
+
+Raises ``TypeError`` if ``(not (numeric? x))``.
+
+.. code-block:: hy
+
+   => (even? 2)
+   True
+
+   => (even? 13)
+   False
+
+   => (even? 0)
+   True
+
+
 .. _every?-fn:
 
 every?
@@ -205,29 +228,6 @@ Return True if x is a float.
 
    => (float? -2)
    False
-
-
-.. _even?-fn:
-
-even?
------
-
-Usage: ``(even? x)``
-
-Return True if x is even.
-
-Raises ``TypeError`` if ``(not (numeric? x))``.
-
-.. code-block:: hy
-
-   => (even? 2)
-   True
-
-   => (even? 13)
-   False
-
-   => (even? 0)
-   True
 
 
 .. _identity-fn:
